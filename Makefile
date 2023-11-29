@@ -30,7 +30,7 @@ MIN_SUPPORTED_GO_MAJOR_VERSION = 1
 MIN_SUPPORTED_GO_MINOR_VERSION = 21
 GO_VERSION_VALIDATION_ERR_MSG = Golang version is not supported, please update to at least $(MIN_SUPPORTED_GO_MAJOR_VERSION).$(MIN_SUPPORTED_GO_MINOR_VERSION)
 
-VERSION ?= $(shell git describe --tags --abbrev=0)
+VERSION ?= $(shell git describe --abbrev=0)
 COMPILED_AT = $(shell date +%s)
 RELEASES_URL ?= https://api.github.com/repos/BishopFox/sliver/releases
 ARMORY_PUBLIC_KEY ?= RWSBpxpRWDrD7Fe+VvRE3c2VEDC2NK80rlNCj+BX0gz44Xw07r6KQD9L
